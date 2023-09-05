@@ -2016,6 +2016,18 @@ section {
   transition: 0.4s;
 }
 
+.get-in-touch .php-email-form button[type=button]:hover {
+  background: var(--color-primary);
+}
+
+.get-in-touch .php-email-form button[type=button] {
+  background: #1f98d1;
+  border: 0;
+  padding: 12px 40px;
+  color: #fff;
+  transition: 0.4s;
+}
+
 .get-in-touch .php-email-form button[type=submit]:hover {
   background: var(--color-primary);
 }
