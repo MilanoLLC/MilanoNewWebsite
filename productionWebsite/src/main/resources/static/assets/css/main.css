@@ -588,7 +588,7 @@ section {
 .hero {
   width: 100%;
   min-height: 100vh;
-  background: url("../img/wedding/bg.png") top center;
+  background: url("../img/bg.avif") top center;
   background-size: cover;
   position: relative;
   padding: 120px 0;
@@ -891,7 +891,7 @@ section {
 /*  */
 /* help-you-section */
 .help-you-section {
-  background: linear-gradient(rgba(27, 47, 69, 0.8), rgba(27, 47, 69, 0.8)), url("../img/trillion-main.jpg") center center;
+  background: linear-gradient(rgba(27, 47, 69, 0.8), rgba(27, 47, 69, 0.8)), url("../img/bgBanner.avif") center center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -2024,7 +2024,7 @@ section {
   background: #1f98d1;
   border: 0;
   padding: 12px 40px;
-  color: #fff;
+  color: black;
   transition: 0.4s;
 }
 
@@ -2825,7 +2825,7 @@ font-weight: 600 !important;
 }
 
 #owl-demo .item img {
-  height: 300px;
+  height: auto;
 
 }
 

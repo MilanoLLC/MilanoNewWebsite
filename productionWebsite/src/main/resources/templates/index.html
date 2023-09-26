@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Milano Palace Events</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Premium Event Planning Services | Milano Palace Events</title>
+
+  <meta content="Discover top-notch event planning and management services at Milano Palace Events. We specialize in corporate events, weddings, digital marketing, web design, and app development." name="description">
+  <meta content="event planning, wedding planning, digital marketing, web design, app development, Milano Palace Events" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/logo2.png" rel="icon">
@@ -33,7 +34,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <style>
+    .btn-arrow {
+      transition: transform 0.2s ease-in-out;
+    }
 
+    .btn-arrow:hover {
+      transform: translateX(5px);
+      color: rgb(49, 85, 163);
+    }
+  </style>
 </head>
 
 <body class="page-index">
@@ -42,11 +52,8 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <!-- <h1 class="d-flex align-items-center">Milano Palace</h1> -->
-        <img src="assets/img/logo2.png" style="width: 180px;">
+      <a href="/index" class="logo d-flex align-items-center">
+        <img src="assets/img/logo2.png" style="width: 180px;" alt="Milano Palace Events Logo" loading="lazy">
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -72,7 +79,7 @@
             </ul>
           </li>
           <li><a href="#">Portfolio</a></li>
-          <li><a href="/about" >About US</a></li>
+          <li><a href="/about">About US</a></li>
           <li><a href="/contact">Contact Us</a></li>
         </ul>
       </nav>
@@ -95,7 +102,7 @@
               and memorable. Our team is dedicated to meeting client objectives by creating events that leave a lasting
               impression. </p>
           </blockquote>
-      
+
         </div>
       </div>
     </div>
@@ -143,6 +150,9 @@
                 are centered around professional and connected experiences. Reward your clients
                 and their shareholders with events that will reinforce corporate relationships
                 and leave a lasting impression.</p>
+              <a href="/events" class="btn btn-arrow">
+                More about Corporate events <i class="bi bi-arrow-right"></i>
+              </a>
             </div>
           </div>
           <!-- End Service Item -->
@@ -154,22 +164,57 @@
               <p class="description"> Turn your vision into a reality with our wedding event services.
                 We will handle logistics, catering, production, and entertainment to guarantee you a
                 luxurious, stress free, and show-stopping celebration. </p>
+              <a href="/wedding" class="btn btn-arrow">
+                More about Wedding events <i class="bi bi-arrow-right"></i>
+              </a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-megaphone" style="color: #15a04a;"></i></div>
+            <div class="icon flex-shrink-0"><i class="bi bi-megaphone" style="color: purple;"></i></div>
             <div>
               <h4 class="title">Digital Marketing</h4>
               <p class="description"> Expand the reach of your business, acquire new customers, and
                 generate substantial leads with our digital marketing team.</p>
+              <a href="/marketingDm" class="btn btn-arrow">
+                More about Digital Marketing <i class="bi bi-arrow-right"></i>
+              </a>
             </div>
           </div>
+        </div>
+        <br>
+        <div class="row gy-5">
 
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-filetype-html" style="color: #15a04a;"></i></div>
+            <div>
+              <h4 class="title">Web design</h4>
+              <p class="description"> Transform your online presence with our website development. We handle
+                coding, design, and functionality to deliver a polished, user-friendly, and impactful web experience.
+              </p>
+              <a href="/marketingWd" class="btn btn-arrow">
+                More about Web design <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-code-slash" style="color: skyblue;"></i></div>
+            <div>
+              <h4 class="title">Apps development</h4>
+              <p class="description"> Turn your innovative ideas into reality with our app development services. We
+                handle coding, design, and functionality to ensure a seamless, user-friendly, and impactful mobile
+                experience.
+              </p>
+              <a href="/marketingApps" class="btn btn-arrow">
+                More about Apps development <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
         </div>
 
       </div>
-    </section><!-- End Our Services Section -->
+    </section>
+    <!-- End Our Services Section -->
 
     <!-- ======= Features Section ======= -->
     <section id="features" class="features" style="background-color: #f7f9fc;">
@@ -182,16 +227,16 @@
             <div class="col-md-8 col-12 section-content">
               <h4>Our Work
               </h4>
-              <p>With years of experience in the event management industry, the Milano Palace team is dedicated to
-                providing the utmost professional service when organizing events. Our goal is to work with you to plan
-                one-of-a-kind events and create environments where your personal and professional relationships can
-                grow. With a unique creative style centered around immaculate execution, we want your extraordinary
-                event to be an important accomplishment.
+              <p>Drawing on our extensive expertise in event management, the Milano Palace team is committed to
+                delivering top-tier professionalism when it comes to coordinating various occasions. Our mission is to
+                collaborate closely with you to design exceptional gatherings and establish settings that foster the
+                growth of both your personal and business connections. Rooted in a distinctive creative approach coupled
+                with flawless execution, we aim to transform your special occasions into remarkable successes.
               </p>
             </div>
 
             <div class="col-md-4 col-12 icon flex-d justify-content-center">
-              <img src="assets/img/wedding images/5.jpg" class="img-fluid section-image ">
+              <img src="assets/img/trillion-main.jpg" alt="Crowd attending an event with stage and lights" class="img-fluid section-image " loading="lazy">
             </div>
 
           </div>
@@ -219,7 +264,7 @@
       </div>
     </section><!-- End Call To Action Section -->
     <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
+    <!-- <section id="features" class="features">
       <div class=" details">
         <div class="container" data-aos="fade-up" data-aos-delay="300">
 
@@ -299,8 +344,9 @@
         </div>
 
 
-    </section><!-- End Features Section -->
-   
+    </section> -->
+    <!-- End Features Section -->
+
 
   </main><!-- End #main -->
 
@@ -313,7 +359,8 @@
 
           <div class="col-lg-5 col-md-12 footer-contact text-start">
             <h4>Contact Us</h4>
-            <p> <i class="bi bi-geo-alt-fill"></i> <a style="color: black;" href="https://goo.gl/maps/4DAvooGhECnZrbYD9" target="_blank">Al
+            <p> <i class="bi bi-geo-alt-fill"></i> <a style="color: black;" href="https://goo.gl/maps/4DAvooGhECnZrbYD9"
+                target="_blank">Al
                 Garhoud views building 708 Sheikh Rashid Road
                 <br>Dubai United Arab Emirates</a>
             </p>
@@ -326,7 +373,8 @@
             <p> <i class="bi bi-envelope-at"> </i>
               <a style="color: black;" href="mailto:info@milanollc.com">info@milanollc.com</a>
             </p><br>
-            <p> <i class="bi bi-envelope-at-fill"> </i> <a style="color: black;" href="mailto:marketing@milanollc.com">marketing@milanollc.com</a></p>
+            <p> <i class="bi bi-envelope-at-fill"> </i> <a style="color: black;"
+                href="mailto:marketing@milanollc.com">marketing@milanollc.com</a></p>
 
             <div class="social-links d-flex justify-content-center ">
               <a href="https://www.facebook.com/Milanowedding/" target="_blank" class="facebook"><i
@@ -357,7 +405,8 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" id="message" placeholder="message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" id="message" placeholder="message"
+                  required></textarea>
               </div>
               <div class="my-3">
                 <p id="sucMessage" style="color: green;display: none;">Your message has been sent. Thank you!</p>
@@ -366,7 +415,8 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="button" onclick="sendMessage()" id="submitBtn">Send Message</button></div>
+              <div class="text-center"><button type="button" onclick="sendMessage()" id="submitBtn">Send
+                  Message</button></div>
             </form>
 
           </div>
@@ -382,7 +432,7 @@
     <div class="footer-legal">
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span>Milano Palace</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>Milano Palace Events</span></strong>. All Rights Reserved
         </div>
 
       </div>

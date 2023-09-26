@@ -63,4 +63,10 @@ public class ViewsController {
 		return "contact";
 	}
 	
-}
+	@GetMapping("/testing")  
+	public String testing() {
+		return "testing";
+	}     
+	   
+} 
+   
