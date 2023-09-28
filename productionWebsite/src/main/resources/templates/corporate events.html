@@ -5,9 +5,14 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Professional Event Management Services in Dubai - Conferences, Product Launch, Gala, Festivals, Sports ,corporate events</title>
-  <meta content="Discover our professional event management services in Dubai. We specialize in conferences, product launches, gala and networking events, festivals, and sports events. Create memorable and engaging experiences for your audience." name="description">
-  <meta content="event management, corporate events, conferences, product launch, gala events, festivals, sports events, Dubai" name="keywords">
+  <title>Professional Event Management Services in Dubai - Conferences, Product Launch, Gala, Festivals, Sports
+    ,corporate events</title>
+  <meta
+    content="Discover our professional event management services in Dubai. We specialize in conferences, product launches, gala and networking events, festivals, and sports events. Create memorable and engaging experiences for your audience."
+    name="description">
+  <meta
+    content="event management, corporate events, conferences, product launch, gala events, festivals, sports events, Dubai"
+    name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/logo2.png" rel="icon">
@@ -35,19 +40,65 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <link href="assets/css/map.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <style>
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .srvImg {
+      filter: brightness(0.5);
+      transition: filter 0.5s ease;
+      width: 306px;
+      height: 204px;
+      cursor: pointer;
+    }
+
+    .srvImg:hover {
+      filter: brightness(0.8);
+    }
+
+
+    @media (max-width: 830px) {
+      .srvImg {
+        width: 364px;
+        height: 242px;
+      }
+    }
+
+    .imgTxt {
+      cursor: pointer;
+      font-family: cursive;
+      color: white;
+      font-size: 22px;
+    }
+
+
+    .imgCont {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+  </style>
+
 
 </head>
 
 <body class="page-services">
 
-    <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="/index" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <!-- <h1 class="d-flex align-items-center">Milano Palace</h1> -->
-        <img width="180px" height="93px" src="assets/img/logo2.png">
+        <img width="180px" height="93px" src="assets/img/logo2.png" alt="Milano Palace Events logo">
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -56,7 +107,8 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="/index">Home</a></li>
-          <li class="dropdown"><a href="#" class="active"><span>Events</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="#" class="active"><span>Events</span> <i
+                class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="/events">Corporate Events</a></li>
               <li><a href="/wedding">Wedding Events</a></li>
@@ -73,7 +125,7 @@
             </ul>
           </li>
           <li><a href="#">Portfolio</a></li>
-          <li><a href="/about" >About US</a></li>
+          <li><a href="/about">About US</a></li>
           <li><a href="/contact">Contact Us</a></li>
         </ul>
       </nav>
@@ -180,33 +232,130 @@
     </section>
 
 
-    <section id="features" class="features">
-      <div class=" details">
-        <div class="container" data-aos="fade-up" data-aos-delay="300">
+
+
+    <section id="about" class="about" style="background-color: #f7f9fc;">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Your event road map</h2>
+        </div>
+        <div class="container">
           <div class="row">
-
-
-            <div class="col-md-8 col-12 section-content">
-              <h4> Why Milano Place
-              </h4>
-
-              <p>The objective is to create the perfect environment that will wow your guests and allow for professional
-                affiliations to grow. Lean on our expertise to handle the elements that will come together to create the
-                perfect setting to strengthen corporate relationships.</p>
+            <div class="col-md-12">
+              <div class="main-timeline">
+                <a href="#" class="timeline">
+                  <div class="timeline-icon">
+                    <!-- <i class="fa fa-globe"></i> -->
+                    <i class="fas fa-drafting-compass"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <h3 class="title">Crafting Your Event Experience</h3>
+                    <p class="description">
+                      Begin your journey by envisioning the perfect event. We work closely with you to
+                      understand your goals and budget, ensuring your event aligns seamlessly with your
+                      brand's identity. Together, we'll choose the ideal venue, date, and time, and craft a
+                      unique event concept and agenda that captivates your audience.
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="timeline">
+                  <div class="timeline-icon">
+                    <i class="fas fa-bullhorn"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <h3 class="title">Join the Excitement</h3>
+                    <p class="description">
+                      Get ready to be a part of something extraordinary. We'll create a buzz around your
+                      event, spreading the word through captivating marketing strategies that include online
+                      and offline channels. You can easily register for the event on our website, and we're
+                      always open to partnerships and sponsorships to make your experience even more
+                      enriching.
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="timeline">
+                  <div class="timeline-icon">
+                    <i class="fas fa-calendar"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <h3 class="title">The Grand Day Arrives</h3>
+                    <p class="description">
+                      The day you've been waiting for is here! We take care of all the logistics and
+                      operations, ensuring a seamless event. Our dedicated team will be on-site to manage
+                      everything, from registration to technical support, leaving you free to enjoy the event.
+                      You'll have access to valuable resources and content throughout the day.
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="timeline">
+                  <div class="timeline-icon">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                  <div class="timeline-content">
+                    <h3 class="title">Your Event Journey Continues</h3>
+                    <p class="description">
+                      The event might be over, but your experience doesn't end there. We value your feedback,
+                      so please share your thoughts with us. We'll provide you with event highlights, photos,
+                      and videos to relive the moments. And don't forget to explore our upcoming events and
+                      initiatives—your next great adventure awaits.
+                    </p>
+                  </div>
+                </a>
+              </div>
             </div>
-
-            <div class="col-md-4 col-12 icon flex-d justify-content-center question-img">
-              <img src="assets/img/images-of-question-marks-920x615.jpg" class="section-image img-fluid">
-            </div>
-
           </div>
-
         </div>
       </div>
+    </section>
 
-    </section><!-- End Features Section -->
 
-    
+
+    <section id="servicesWeProvide" class="about" style="background-color: white;">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Services we provide </h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12 icon flex-d justify-content-center question-img imgCont">
+            <img src="assets/img/events/beamLights.avif" alt="Light system fixed on trusses "
+              class="section-image img-fluid srvImg">
+            <div class="centered imgTxt">Lights</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 icon flex-d justify-content-center question-img imgCont">
+            <img src="assets/img/events/soundMixer.avif" alt="Sound mixer" class="section-image img-fluid srvImg">
+            <div class="centered imgTxt">Sound System</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 icon flex-d justify-content-center question-img imgCont">
+            <img src="assets/img/events/cam.avif" alt="Video camera fixed on a crane"
+              class="section-image img-fluid srvImg">
+            <div class="centered imgTxt">Videography And Photography </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 icon flex-d justify-content-center question-img imgCont">
+            <img src="assets/img/events/stageWithChairs.avif" alt="Stage with screens and chairs"
+              class="section-image img-fluid srvImg">
+            <div class="centered imgTxt">Screens</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 icon flex-d justify-content-center question-img imgCont">
+            <img src="assets/img/events/lightsWithScafold.avif" alt="Trusses and rigging"
+              class="section-image img-fluid srvImg">
+            <div class="centered imgTxt">Trusses</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 icon flex-d justify-content-center question-img imgCont">
+            <img src="assets/img/events/meetingHall.avif" alt="Meetings hall with stage, podium, charis and tables"
+              class="section-image img-fluid srvImg">
+            <div class="centered imgTxt">Chairs And Sofas</div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 icon flex-d justify-content-center question-img imgCont">
+            <img src="assets/img/events/stage.avif" alt="Stage with screens ,lights , sound and crowds."
+              class="section-image img-fluid srvImg">
+            <div class="centered imgTxt">Explore More <i class="fa fa-arrow-right"></i> </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
     <section id="features" class="features">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
@@ -225,55 +374,22 @@
                           <div class="container">
                             <div class="row">
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-1"></a>
+                                <div class="partner-box partner-box-1"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-2"></a>
+                                <div class="partner-box partner-box-2"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-3"></a>
+                                <div class="partner-box partner-box-3"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-4"></a>
+                                <div class="partner-box partner-box-4"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-5"></a>
+                                <div class="partner-box partner-box-5"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-6"></a>
-                              </div>
-                            </div>
-                          </div>
-                        </section>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="item">
-                    <div class=" details">
-                      <div class="container" data-aos="fade-up" data-aos-delay="300">
-                        <section id="partner" class="section partner">
-                          <div class="container">
-                            <div class="row">
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-7"></a>
-                              </div>
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-8"></a>
-                              </div>
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-9"></a>
-                              </div>
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-10"></a>
-                              </div>
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-11"></a>
-                              </div>
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-12"></a>
+                                <div class="partner-box partner-box-6"></div>
                               </div>
                             </div>
                           </div>
@@ -291,55 +407,22 @@
                           <div class="container">
                             <div class="row">
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-13"></a>
+                                <div class="partner-box partner-box-7"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-14"></a>
+                                <div class="partner-box partner-box-8"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-15"></a>
+                                <div class="partner-box partner-box-9"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-16"></a>
+                                <div class="partner-box partner-box-10"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-17"></a>
+                                <div class="partner-box partner-box-11"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-18"></a>
-                              </div>
-                            </div>
-                          </div>
-                        </section>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="item">
-                    <div class=" details">
-                      <div class="container" data-aos="fade-up" data-aos-delay="300">
-                        <section id="partner" class="section partner">
-                          <div class="container">
-                            <div class="row">
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-19"></a>
-                              </div>
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-20"></a>
-                              </div>
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-21"></a>
-                              </div>
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-22"></a>
-                              </div>
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-23"></a>
-                              </div>
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-24"></a>
+                                <div class="partner-box partner-box-12"></div>
                               </div>
                             </div>
                           </div>
@@ -357,55 +440,22 @@
                           <div class="container">
                             <div class="row">
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-25"></a>
+                                <div class="partner-box partner-box-13"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-26"></a>
+                                <div class="partner-box partner-box-14"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-27"></a>
+                                <div class="partner-box partner-box-15"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-28"></a>
+                                <div class="partner-box partner-box-16"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-29"></a>
+                                <div class="partner-box partner-box-17"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-30"></a>
-                              </div>
-                            </div>
-                          </div>
-                        </section>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="item">
-                    <div class=" details">
-                      <div class="container" data-aos="fade-up" data-aos-delay="300">
-                        <section id="partner" class="section partner">
-                          <div class="container">
-                            <div class="row">
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-31"></a>
-                              </div>
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-32"></a>
-                              </div>
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-33"></a>
-                              </div>
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-34"></a>
-                              </div>
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-35"></a>
-                              </div>
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-36"></a>
+                                <div class="partner-box partner-box-18"></div>
                               </div>
                             </div>
                           </div>
@@ -423,55 +473,22 @@
                           <div class="container">
                             <div class="row">
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-37"></a>
+                                <div class="partner-box partner-box-19"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-38"></a>
+                                <div class="partner-box partner-box-20"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-39"></a>
+                                <div class="partner-box partner-box-21"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-40"></a>
+                                <div class="partner-box partner-box-22"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-41"></a>
+                                <div class="partner-box partner-box-23"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-42"></a>
-                              </div>
-                            </div>
-                          </div>
-                        </section>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="item">
-                    <div class=" details">
-                      <div class="container" data-aos="fade-up" data-aos-delay="300">
-                        <section id="partner" class="section partner">
-                          <div class="container">
-                            <div class="row">
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-43"></a>
-                              </div>
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-44"></a>
-                              </div>
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-45"></a>
-                              </div>
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-46"></a>
-                              </div>
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-47"></a>
-                              </div>
-                              <div class="col-sm-2">
-                                <a class="partner-box partner-box-48"></a>
+                                <div class="partner-box partner-box-24"></div>
                               </div>
                             </div>
                           </div>
@@ -489,10 +506,142 @@
                           <div class="container">
                             <div class="row">
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-49"></a>
+                                <div class="partner-box partner-box-25"></div>
                               </div>
                               <div class="col-sm-2">
-                                <a class="partner-box partner-box-50"></a>
+                                <div class="partner-box partner-box-26"></div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-27"></div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-28"></div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-29"></div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-30"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class=" details">
+                      <div class="container" data-aos="fade-up" data-aos-delay="300">
+                        <section id="partner" class="section partner">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-31"></div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-32"></div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-33"></div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-34"></div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-35"></div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-36"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class=" details">
+                      <div class="container" data-aos="fade-up" data-aos-delay="300">
+                        <section id="partner" class="section partner">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-37"></div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-38"></div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-39"></div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-40"></div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-41"></div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-42"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class=" details">
+                      <div class="container" data-aos="fade-up" data-aos-delay="300">
+                        <section id="partner" class="section partner">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-43"></div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-44"></div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-45"></div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-46"></div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-47"></div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-48"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class=" details">
+                      <div class="container" data-aos="fade-up" data-aos-delay="300">
+                        <section id="partner" class="section partner">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-49"></div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="partner-box partner-box-50"></div>
                               </div>
                             </div>
                           </div>
@@ -514,77 +663,6 @@
       </div>
     </section>
 
-    <!-- <section id="Word" class="why-us">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Our work</h2>
-        </div>
-        <div class="container">
-          <div id="videoCarousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <iframe width="100%" height="499" src="https://www.youtube.com/embed/WYqZmH0wy1k"
-                  title="هيئة تنمية المجتمع   العيد الوطني" frameborder="0"
-                  allow="accelerometer;"
-                  allowfullscreen></iframe>
-              </div>
-              <div class="carousel-item">
-                <iframe width="100%" height="499" src="https://www.youtube.com/embed/W4Gjur5aJac"
-                  title="وزارة الدفاع جائزة المدير العام" frameborder="0"
-                  allow="accelerometer;"
-                  allowfullscreen></iframe>
-              </div>
-              <div class="carousel-item">
-                <iframe width="100%" height="499" src="https://www.youtube.com/embed/3Nsyx7dim5Q"
-                  title="موتمر الشعراء السنوي الامير نواف بن فيصل ال سعود" frameborder="0"
-                  allow="accelerometer;"
-                  allowfullscreen></iframe>
-              </div>
-              <div class="carousel-item">
-                <iframe width="100%" height="499" src="https://www.youtube.com/embed/MWw0syaRxWU"
-                  title="National Olympic Committee" frameborder="0"
-                  allow="accelerometer;"
-                  allowfullscreen></iframe>
-              </div>
-              <div class="carousel-item">
-                <iframe width="100%" height="499" src="https://www.youtube.com/embed/uzxapbcdTbA"
-                  title="العيد الوطني الواحد والخمسين - الهيئة الاتحادية للهوية والجنسية" frameborder="0"
-                  allow="accelerometer;"
-                  allowfullscreen></iframe>
-              </div>
-              <div class="carousel-item">
-                <iframe width="100%" height="499" src="https://www.youtube.com/embed/35CbDWNo-IE"
-                  title="تكريم فريق اكسبو 2020 - الهيئة الاتحادية للهوية والجنسية" frameborder="0"
-                  allow="accelerometer;"
-                  allowfullscreen></iframe>
-              </div>
-              <div class="carousel-item">
-                <iframe width="100%" height="499" src="https://www.youtube.com/embed/MseqtPSNLLM"
-                  title="ملتقى تكريم شركاء بطاقة السعادة - الهيئة الاتحادية للهوية والجنسية" frameborder="0"
-                  allow="accelerometer;"
-                  allowfullscreen></iframe>
-              </div>
-              <div class="carousel-item">
-                <iframe width="100%" height="499" src="https://www.youtube.com/embed/3pcf3YWDHKo"
-                  title="أسبوع السعادة - الهيئة الاتحادية للهوية والجنسية" frameborder="0"
-                  allow="accelerometer;"
-                  allowfullscreen></iframe>
-              </div>
-            </div>
-           
-          </div>
-          <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-
-      </div>
-    </section> -->
 
 
     <section id="help-you-section" class="help-you-section">
@@ -606,23 +684,9 @@
       </div>
     </section>
 
-    <section id="about" class="about" style="background-color: white;">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header pb-0">
-          <h2>More about us</h2>
 
-        </div>
-        <div class="content ">
-          <p>
-            Our team has set up many of the biggest conferences, exhibitions, and government events in Dubai, such as
-            the Olympic Creativity Lab Conference. An array of resources are used to plan events that are creative,
-            professional, and detail-oriented. Our successful corporate event planning has yielded impactful results
-            in building brand recognition, generating revenue, and promoting company culture.
-          </p>
-        </div>
 
-      </div>
-    </section>
+
 
 
 
@@ -641,7 +705,8 @@
 
           <div class="col-lg-5 col-md-12 footer-contact text-start">
             <h4>Contact Us</h4>
-            <p> <i class="bi bi-geo-alt-fill"></i> <a style="color: black;" href="https://goo.gl/maps/4DAvooGhECnZrbYD9" target="_blank">Al
+            <p> <i class="bi bi-geo-alt-fill"></i> <a style="color: black;" href="https://goo.gl/maps/4DAvooGhECnZrbYD9"
+                target="_blank">Al
                 Garhoud views building 708 Sheikh Rashid Road
                 <br>Dubai United Arab Emirates</a>
             </p>
@@ -654,7 +719,8 @@
             <p> <i class="bi bi-envelope-at"> </i>
               <a style="color: black;" href="mailto:info@milanollc.com">info@milanollc.com</a>
             </p><br>
-            <p> <i class="bi bi-envelope-at-fill"> </i> <a style="color: black;" href="mailto:marketing@milanollc.com">marketing@milanollc.com</a></p>
+            <p> <i class="bi bi-envelope-at-fill"> </i> <a style="color: black;"
+                href="mailto:marketing@milanollc.com">marketing@milanollc.com</a></p>
 
             <div class="social-links d-flex justify-content-center ">
               <a href="https://www.facebook.com/Milanowedding/" target="_blank" class="facebook"><i
@@ -685,7 +751,8 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" id="message" placeholder="message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" id="message" placeholder="message"
+                  required></textarea>
               </div>
               <div class="my-3">
                 <p id="sucMessage" style="color: green;display: none;">Your message has been sent. Thank you!</p>
@@ -694,7 +761,8 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="button" onclick="sendMessage()" id="submitBtn">Send Message</button></div>
+              <div class="text-center"><button type="button" onclick="sendMessage()" id="submitBtn">Send
+                  Message</button></div>
             </form>
 
           </div>
@@ -725,7 +793,6 @@
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-
 
 
   <!-- Vendor JS Files -->
