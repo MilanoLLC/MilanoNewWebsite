@@ -3,11 +3,15 @@ package com.milanopalace.website.productionWebsite;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.http.MediaType;
+
 
 @RestController
-@RequestMapping("/sitemap.xml")
 public class SitemapController {
 
+	@RequestMapping("/sitemap.xml")
     @GetMapping(produces = "application/xml")
     public String getSitemap() {
         // Replace this with your actual sitemap XML content
@@ -85,4 +89,15 @@ public class SitemapController {
         		+ "</urlset>";
         return sitemapXml;
     }
+    
+    @GetMapping(value = "/xmlfile", produces = MediaType.APPLICATION_XML_VALUE)
+    public Resource getXMLFile() {
+        // Load the XML file from the resources directory
+        Resource xmlFile = new ClassPathResource("sitemap.xml");
+        
+        return xmlFile;
+    } 
+
+
+    
 }
