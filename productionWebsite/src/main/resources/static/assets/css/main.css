@@ -210,6 +210,23 @@ section {
   font-family: var(--font-secondary);
 }
 
+.breadcrumbs h3 {
+  font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    font-family: var(--font-secondary);
+}
+
+@media (max-width: 768px) {
+
+.breadcrumbs h3 {
+  font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+    font-family: var(--font-secondary);
+}
+}
+
 .breadcrumbs p {
   color: rgba(255, 255, 255, 0.8);
 }
@@ -2024,7 +2041,7 @@ section {
   background: #1f98d1;
   border: 0;
   padding: 12px 40px;
-  color: black;
+  color: white;
   transition: 0.4s;
 }
 

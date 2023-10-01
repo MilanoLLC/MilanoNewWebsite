@@ -40,17 +40,22 @@ public class ViewsController {
 	@GetMapping("/marketingGa")
 	public String marketingGa() {
 		return "google ads";
-	}
-	
+	} 
+	  
 	
 	@GetMapping("/marketingWd")
-	public String marketingWd() {
-		return "web design";
-	}
-	
+	public String marketingWd() {   
+		return "web design"; 
+	}  
+	  
+	@GetMapping("/itSolutions")    
+	public String itSolutions() {  
+		return "itSolutions";
+	}  
+	  
 	@GetMapping("/marketingApps")
 	public String marketingApps() {
-		return "app development";
+		return "app development"; 
 	} 
 	
 	@GetMapping("/about")
