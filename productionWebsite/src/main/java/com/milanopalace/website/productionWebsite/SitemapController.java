@@ -75,7 +75,7 @@ public class SitemapController {
         return sitemapXml;
     }
     
-    @GetMapping(value = "/milanoSiteMap", produces = MediaType.APPLICATION_XML_VALUE)
+    @GetMapping(value = "/xmlfile", produces = MediaType.APPLICATION_XML_VALUE)
     public Resource getXMLFile() {
         // Load the XML file from the resources directory
         Resource xmlFile = new ClassPathResource("sitemap.xml");
