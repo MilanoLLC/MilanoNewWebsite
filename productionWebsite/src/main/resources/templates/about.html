@@ -31,20 +31,17 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  
+
 </head>
 
 <body class="page-about">
 
   <!-- ======= Header ======= -->
-    <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="/index" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <!-- <h1 class="d-flex align-items-center">Milano Palace</h1> -->
-        <img src="assets/img/logo2.png" style="width: 180px;">
+        <img width="180px" height="93px" src="assets/img/logo2.png" alt="Milano Palace Events logo">
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -52,29 +49,25 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="/index">Home</a></li>
-          <li class="dropdown"><a href="#"><span>Events</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="/events">Corporate Events</a></li>
-              <li><a href="/wedding">Wedding Events</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>IT Solutions</span> <i
+          <li><a id="home" href="/index">Home</a></li>
+          <li><a id="events" href="/events">Corporate Events</a></li>
+          <li><a id="wedding" href="/wedding">Wedding Events</a></li>
+          <li class="dropdown"><a id="itSol" href="#"><span>IT Solutions</span> <i
                 class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="/itSolutions">IT support services</a></li>
               <li><a href="/marketingWd">Web Design</a></li>
               <li><a href="/marketingApps">App Development</a></li>
-              <li><a href="/marketingDm">Digital Marketing</a></li>
-              <li><a href="/marketingSm">Social Media Marketing</a></li>
-              <li><a href="/marketingGa">Google Ads(PPC)</a></li>
+              <!-- <li><a href="/marketingDm">Digital Marketing</a></li>
+                        <li><a href="/marketingSm">Social Media Marketing</a></li>
+                        <li><a href="/marketingGa">Google Ads(PPC)</a></li> -->
             </ul>
           </li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="/about" class="active">About US</a></li>
-          <li><a href="/contact">Contact Us</a></li>
+          <!-- <li><a href="#">Portfolio</a></li> -->
+          <li><a id="about" href="/about" class="active">About US</a></li>
+          <li><a id="contact" href="/contact">Contact Us</a></li>
         </ul>
-      </nav><!-- .navbar -->
+      </nav>
 
     </div>
   </header>
@@ -190,7 +183,8 @@
 
           <div class="col-lg-5 col-md-12 footer-contact text-start">
             <h4>Contact Us</h4>
-            <p> <i class="bi bi-geo-alt-fill"></i> <a style="color: black;" href="https://goo.gl/maps/4DAvooGhECnZrbYD9" target="_blank">Al
+            <p> <i class="bi bi-geo-alt-fill"></i> <a style="color: black;" href="https://goo.gl/maps/4DAvooGhECnZrbYD9"
+                target="_blank">Al
                 Garhoud views building 708 Sheikh Rashid Road
                 <br>Dubai United Arab Emirates</a>
             </p>
@@ -203,7 +197,8 @@
             <p> <i class="bi bi-envelope-at"> </i>
               <a style="color: black;" href="mailto:info@milanollc.com">info@milanollc.com</a>
             </p><br>
-            <p> <i class="bi bi-envelope-at-fill"> </i> <a style="color: black;" href="mailto:marketing@milanollc.com">marketing@milanollc.com</a></p>
+            <p> <i class="bi bi-envelope-at-fill"> </i> <a style="color: black;"
+                href="mailto:marketing@milanollc.com">marketing@milanollc.com</a></p>
 
             <div class="social-links d-flex justify-content-center ">
               <a href="https://www.facebook.com/Milanowedding/" target="_blank" class="facebook"><i
@@ -234,7 +229,8 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" id="message" placeholder="message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" id="message" placeholder="message"
+                  required></textarea>
               </div>
               <div class="my-3">
                 <p id="sucMessage" style="color: green;display: none;">Your message has been sent. Thank you!</p>
@@ -243,7 +239,8 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="button" onclick="sendMessage()" id="submitBtn">Send Message</button></div>
+              <div class="text-center"><button type="button" onclick="sendMessage()" id="submitBtn">Send
+                  Message</button></div>
             </form>
 
           </div>
