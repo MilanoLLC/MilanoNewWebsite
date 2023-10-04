@@ -72,17 +72,17 @@ public class SitemapController {
         		+ "\r\n"
         		+ "\r\n"
         		+ "</urlset>";
-        return sitemapXml;
-    }
-    
+        return sitemapXml; 
+    }   
+      
     @GetMapping(value = "/xmlfile", produces = MediaType.APPLICATION_XML_VALUE)
     public Resource getXMLFile() {
         // Load the XML file from the resources directory
         Resource xmlFile = new ClassPathResource("sitemap.xml");
         
         return xmlFile;
-    } 
-
-
-    
-}
+    }    
+         
+  
+      
+} 
