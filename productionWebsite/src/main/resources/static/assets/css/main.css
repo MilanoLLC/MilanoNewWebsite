@@ -23,6 +23,7 @@
   --color-primary: #56b8e6;
   --color-secondary: #1b2f45;
   --tp-theme-primary: #1f98d1;
+  --main-color:#38618e;
 }
 
 /* Smooth scroll behavior */
@@ -58,7 +59,13 @@ h6 {
   font-family: var(--font-primary);
   font-size: 22px;
 }
-
+p {
+  color: #808080;
+  ;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+}
 /*--------------------------------------------------------------
 # Frequently Asked Questions Section
 --------------------------------------------------------------*/
@@ -2638,9 +2645,21 @@ section {
 
 .footer .footer-content {
   /* background-color: #e6e7e7 !important; */
-  background-color: #f7f9fc;
-  background-size: contain;
+  background-color: #14212f;
+  /* background-size: contain; */
   padding: 60px 0 30px 0;
+}
+
+.footer .footer-legal {
+  background: #1b2f45;
+  padding: 30px 0;
+}
+
+.footer-img {
+  /* background-image: url('../img/footer-bg-1.jpg'); */
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
 }
 
 .footer .footer-content .footer-info {
@@ -2667,6 +2686,7 @@ section {
 }
 
 .footer .footer-content .footer-info p {
+  color: white;
   /* font-size: 15px;
   margin-bottom: 0;
   font-family: var(--font-primary);
@@ -2718,14 +2738,13 @@ section {
 
 
 
-
 .footer .footer-content p i {
   font-size: 14px;
   line-height: 0;
   display: inline-block;
   width: 32px;
   height: 32px;
-  color: rgba(27, 47, 69, 0.5);
+  color: white;
   margin-right: 10px;
   transition: 0.3s;
   display: flex;
@@ -2746,7 +2765,7 @@ section {
 .footer .footer-content h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #29486a;
+  color: var(--tp-theme-primary);
   position: relative;
   /* padding-bottom: 12px; */
 }
@@ -2793,8 +2812,13 @@ section {
   line-height: 26px;
   /* color: var(--color-secondary); */
   font-size: medium;
-  color: #666666 !important;
+  color: white;
   font-weight: 300px;
+}
+
+.footer .footer-content p a {
+
+  color: white;
 }
 
 .footer .footer-content h4::after {
@@ -2811,14 +2835,12 @@ section {
 }
 
 
-.footer .footer-legal {
-  background: #fff;
-  padding: 30px 0;
-}
+
 
 .footer .footer-legal .copyright {
   text-align: center;
-  color: var(--color-secondary);
+  color: white;
+  /* color: var(--color-secondary); */
 }
 
 .footer .footer-legal .credits {
@@ -2847,21 +2869,10 @@ section {
 }
 
 /* #808080; */
-p {
-  color: #808080;
-  ;
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 30px;
-}
 
 
-.footer-img {
-  background-image: url('../img/footer-bg-1.jpg');
-  background-repeat: no-repeat;
-  object-fit: cover;
-  background-size: cover;
-}
+
+
 
 .tp-section-title-wrapper p {
   font-size: 16px;
@@ -2956,4 +2967,12 @@ p {
   -o-transition: 0.3s;
   transition: 0.3s;
   z-index: -3;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
 }

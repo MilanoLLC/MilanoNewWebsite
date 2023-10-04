@@ -180,9 +180,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   }
 
+  new PureCounter();
+	new PureCounter({
+		filesizing: true,
+		selector: ".filesizecount",
+		pulse: 2,
+	});
+
+  
   /**
    * Animation on scroll function and init
    */
+  new WOW().init();
+
   function aos_init() {
     AOS.init({
       duration: 1800,

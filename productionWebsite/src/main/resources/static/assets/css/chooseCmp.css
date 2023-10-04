@@ -1,5 +1,14 @@
 .choose-content {
-    position: relative;
+        position: relative;
+        margin-top: 15px;
+        padding: 20px 10px 20px 120px;
+        border-radius: 50px;
+        z-index: 1;
+        background-color: #f5f9fd;
+        background-size: 200% 100%;
+        cursor: pointer;
+        overflow: hidden;
+    /* position: relative;
     margin-top: 40px;
     padding: 20px 40px 20px 120px;
     border-radius: 50px;
@@ -7,7 +16,7 @@
     background-color: #f5f9fd;
     background-size: 200% 100%;
     cursor: pointer;
-    overflow: hidden;
+    overflow: hidden; */
 }
 
 .choose-content::before {
