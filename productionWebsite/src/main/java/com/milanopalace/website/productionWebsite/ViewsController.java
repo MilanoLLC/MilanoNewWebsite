@@ -70,8 +70,8 @@ public class ViewsController {
 	
 	@GetMapping("/testing")  
 	public String testing() {
-		return "testing";
+		return "testing"; 
 	}     
 	   
-} 
-   
+}   
+    

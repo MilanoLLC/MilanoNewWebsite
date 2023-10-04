@@ -57,8 +57,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="/index" class="logo d-flex align-items-center">
-        <img width="180px" height="93px" src="assets/img/logo2.png" style="width: 180px;"
-          alt="Milano Palace Events Logo" loading="lazy">
+        <img width="180px" height="93px" src="assets/img/logo2.png" alt="Milano Palace Events logo">
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -66,33 +65,28 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="/index" class="active">Home</a></li>
-          <li class="dropdown"><a href="#"><span>Events</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="/events">Corporate Events</a></li>
-              <li><a href="/wedding">Wedding Events</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>IT Solutions</span> <i
+          <li><a id="home" href="/index" class="active">Home</a></li>
+          <li><a id="events" href="/events">Corporate Events</a></li>
+          <li><a id="wedding" href="/wedding">Wedding Events</a></li>
+          <li class="dropdown"><a id="itSol" href="#"><span>IT Solutions</span> <i
                 class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="/itSolutions">IT support services</a></li>
               <li><a href="/marketingWd">Web Design</a></li>
               <li><a href="/marketingApps">App Development</a></li>
-              <li><a href="/marketingDm">Digital Marketing</a></li>
-              <li><a href="/marketingSm">Social Media Marketing</a></li>
-              <li><a href="/marketingGa">Google Ads(PPC)</a></li>
+              <!-- <li><a href="/marketingDm">Digital Marketing</a></li>
+                        <li><a href="/marketingSm">Social Media Marketing</a></li>
+                        <li><a href="/marketingGa">Google Ads(PPC)</a></li> -->
             </ul>
           </li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="/about">About US</a></li>
-          <li><a href="/contact">Contact Us</a></li>
+          <!-- <li><a href="#">Portfolio</a></li> -->
+          <li><a id="about" href="/about">About US</a></li>
+          <li><a id="contact" href="/contact">Contact Us</a></li>
         </ul>
       </nav>
 
     </div>
-  </header><!-- End Header -->
-
+  </header>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">
@@ -217,7 +211,7 @@
               </a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <!-- <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="icon flex-shrink-0"><i class="bi bi-megaphone" style="color: purple;"></i></div>
             <div>
               <h4 class="title">Digital Marketing</h4>
@@ -227,7 +221,7 @@
                 More about Digital Marketing <i class="bi bi-arrow-right"></i>
               </a>
             </div>
-          </div>
+          </div> -->
 
 
 
@@ -273,47 +267,47 @@
 
     <section class="choose-section ptb-100">
       <div class="container">
-          <div class="section-header">
-              <h2>Why Choose Us</h2>
-          </div>
-          <div class="row align-items-center">
-              <div class="col-lg-6 col-md-12">
-                  <div class="choose-content">
-                      <div class="icon">
-                          <i class="bi bi-star-fill"></i>
-                      </div>
-                      <h3>Experience</h3>
-                      <p>Our seasoned team brings years of expertise to the table.</p>
-                  </div>
-                  <div class="choose-content">
-                      <div class="icon">
-                          <i class="bi bi-person"></i>
-                      </div>
-                      <h3>Client-Centric</h3>
-                      <p>Your satisfaction is our priority.</p>
-                  </div>
-                  <div class="choose-content">
-                      <div class="icon">
-                          <i class="bi bi-clock"></i>
-                      </div>
-                      <h3>Timely Delivery</h3>
-                      <p>Projects completed on time and within budget.</p>
-                  </div>
-                  <div class="choose-content">
-                      <div class="icon">
-                          <i class="bi bi-tools"></i>
-                      </div>
-                      <h3>Ongoing Support</h3>
-                      <p>We're here for you post-launch.</p>
-                  </div>
+        <div class="section-header">
+          <h2>Why Choose Us</h2>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="choose-content">
+              <div class="icon">
+                <i class="bi bi-star-fill"></i>
               </div>
-              <div class="col-lg-6 col-md-12">
-                  <div class="choose-image"><img src="assets/img/choose.png" alt="image" style="max-width: 100%;
+              <h3>Experience</h3>
+              <p>Our seasoned team brings years of expertise to the table.</p>
+            </div>
+            <div class="choose-content">
+              <div class="icon">
+                <i class="bi bi-person"></i>
+              </div>
+              <h3>Client-Centric</h3>
+              <p>Your satisfaction is our priority.</p>
+            </div>
+            <div class="choose-content">
+              <div class="icon">
+                <i class="bi bi-clock"></i>
+              </div>
+              <h3>Timely Delivery</h3>
+              <p>Projects completed on time and within budget.</p>
+            </div>
+            <div class="choose-content">
+              <div class="icon">
+                <i class="bi bi-tools"></i>
+              </div>
+              <h3>Ongoing Support</h3>
+              <p>We're here for you post-launch.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="choose-image"><img src="assets/img/choose.png" alt="image" style="max-width: 100%;
               height: auto;"></div>
-              </div>
           </div>
+        </div>
       </div>
-  </section>
+    </section>
 
 
 
