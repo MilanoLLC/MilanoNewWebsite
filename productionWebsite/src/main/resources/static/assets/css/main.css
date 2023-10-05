@@ -2976,3 +2976,42 @@ section {
 .p-absolute {
   position: absolute;
 }
+
+.tp-btn {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: var(--tp-theme-primary);
+  padding: 17px 51px;
+  color: white;
+  position: relative;
+  z-index: 1;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none !important;
+  overflow: hidden;
+}
+.tp-btn::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  height: 0;
+  width: 100%;
+  background: var(--main-color);
+  top: auto;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.tp-btn:hover {
+  color: white;
+}
+.tp-btn:hover::before {
+  opacity: 1;
+  height: 100%;
+  top: 0;
+  bottom: auto;
+  transition: all 0.3s linear;
+}
