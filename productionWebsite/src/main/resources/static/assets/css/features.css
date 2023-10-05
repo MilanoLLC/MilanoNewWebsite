@@ -13393,8 +13393,9 @@ blockquote cite::before {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(15, 13, 29, 0.8);
+  background-color: #223c53;
   z-index: -1;
+  opacity: 0.9;
 }
 .tp-solve-bg {
   mix-blend-mode: luminosity;
@@ -13408,6 +13409,10 @@ blockquote cite::before {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.tp-solve-overlay p{
+  color: white;
 }
 .tp-solve-item {
   text-align: center;
