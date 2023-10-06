@@ -11,7 +11,4 @@ public class ProductionWebsiteApplication {
 		SpringApplication.run(ProductionWebsiteApplication.class, args);
 	}         
                        
-}                                                
-                                                                                                                                                                                                                                                                                   
-                                                                                
-                                                
+}     
