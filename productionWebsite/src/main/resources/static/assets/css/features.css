@@ -13308,15 +13308,16 @@ blockquote cite::before {
   flex: 0 0 auto;
 }
 .tp-tech-item-icon span {
-  font-size: 24px;
-  color: var(--tp-theme-primary);
+  font-size: 32px;
+  color:white;
   height: 60px;
   width: 60px;
   line-height: 60px;
   font-weight: 700;
-  background-color: rgb(220, 228, 248);
+  background-color:  var(--tp-theme-primary);
   text-align: center;
   display: inline-block;
+  border-radius: 50px;
 }
 @media (max-width: 767px) {
   .tp-tech-item-content p br {
@@ -13691,24 +13692,24 @@ blockquote cite::before {
   }
 }
 .tp-video-1-play {
-  position: absolute;
-  bottom: 220px;
-  right: 30px;
+  position: relative;
+  bottom: 520px;
+  right: -93px;
   z-index: 2;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   .tp-video-1-play {
-    right: 130px;
+    right: -93px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tp-video-1-play {
-    right: 130px;
+    right: -93px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-video-1-play {
-    right: 130px;
+    right: -93px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
