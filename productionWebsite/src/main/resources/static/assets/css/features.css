@@ -10469,13 +10469,13 @@ blockquote cite::before {
 }
 .tp-about-3-shape-1 {
   position: absolute;
-  top: 34%;
+  top: 25%;
   left: 0;
 }
 .tp-about-3-project {
   position: absolute;
   bottom: 63px;
-  right: -43px;
+  right: -65px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-about-3-project {
@@ -11725,6 +11725,12 @@ blockquote cite::before {
     padding: 35px 40px 32px 25px;
   }
 }
+
+@media (max-width: 990px) {
+  .tp-feature-item {
+    margin-bottom: 25px;
+  }
+}
 .tp-feature-item:hover {
   background-color: var(--tp-theme-secondary);
   transform: translateY(-20px);
@@ -12112,6 +12118,12 @@ blockquote cite::before {
 .tp-feature-4-item {
   position: relative;
 }
+@media (max-width: 990px) {
+  .tp-feature-4-item {
+    margin-bottom: 25px;
+  }
+}
+
 .tp-feature-4-item:hover .tp-feature-4-thumb::before {
   background-color: #1fa6e6;
   opacity: 0.9;
@@ -12721,7 +12733,7 @@ blockquote cite::before {
   position: relative;
   z-index: 1;
 }
-.tp-project-3-item:hover .tp-project-3-thumb::after {
+/* .tp-project-3-item:hover .tp-project-3-thumb::after {
   height: 100%;
   opacity: 1;
   visibility: visible;
@@ -12730,7 +12742,7 @@ blockquote cite::before {
   transform: translateY(0);
   visibility: visible;
   opacity: 1;
-}
+} */
 .tp-project-3-thumb {
   position: relative;
   z-index: 1;
@@ -12777,7 +12789,15 @@ blockquote cite::before {
 .tp-project-3-title {
   font-size: 20px;
   margin-bottom: 0;
-  color: var(--tp-common-white);
+  color: var(--tp-common-white) !important;
+  font-weight: bold;
+}
+
+.tp-project-3-title a{
+  font-size: 20px;
+  margin-bottom: 0;
+  color: var(--tp-common-white) !important;
+  font-weight: bold;
 }
 .tp-project-3-info {
   position: absolute;
@@ -17346,4 +17366,14 @@ blockquote cite::before {
 
 .flaticon-speed::before {
     content: "\f10a";
+  }
+
+
+
+  .zoom-image {
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .tp-project-3-thumb:hover .zoom-image {
+    transform: scale(1.2); /* Increase the scale to zoom in (e.g., 1.2 for 20% zoom) */
   }
