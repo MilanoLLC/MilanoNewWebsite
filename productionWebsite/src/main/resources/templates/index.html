@@ -96,39 +96,31 @@
   <section id="hero" class="hero d-flex align-items-center">
     <div class="container">
       <div class="row">
-        <div class="col-xl-6">
+        <div class="col-xl-12">
           <br><br>
           <span id="headerTitle"></span>
-
-          <!-- <blockquote data-aos="fade-up" data-aos-delay="100">
-            <p style="color: white;">Milano Palace specializes in a variety of services intended to provide
-              extraordinary value on behalf of
-              its clients. With top tier wedding and event management services, organize experiences that are powerful
-              and memorable. Our team is dedicated to meeting client objectives by creating events that leave a lasting
-              impression. </p>
-          </blockquote> -->
 
         </div>
       </div>
     </div>
   </section>
 
+
   <script>
     const hero = document.getElementById("hero");
     const title = document.getElementById("headerTitle");
     const images = [
-      "assets/img/bg.avif",
-      "assets/img/slider/h1.jpg",
-      "assets/img/slider/h5.jpg",
-      "assets/img/slider/h6.jpg",
-
+      "assets/img/slider/bg.avif",
+      "assets/img/slider/h5.avif",
+      "assets/img/slider/h1.avif",
+      "assets/img/slider/h6.avif"
     ];
 
     const titles = [
-      "<h2 data-aos='fade-up'>Best event and marketing agency in Dubai </h2>",
-      "<h2 data-aos='fade-up'>tests as sda huio sdahuioihu asd </h2>",
-      "<h2 data-aos='fade-up'>Best event and marketing agency in Dubai </h2>",
-      "<h2 data-aos='fade-up'>tests as sda huio sdahuioihu asd </h2>",
+      "<h2 class='heroTitle' data-aos='fade-up'>Dubai's Premier Event Management Company</h2>",
+      "<h2 class='heroTitle' data-aos='fade-up'>Driving Success Through Memorable Events</h2>",
+      "<h2 class='heroTitle' data-aos='fade-up'>Elevating Brands, Engaging Audiences</h2>",
+      "<h2 class='heroTitle' data-aos='fade-up'>Let Milano Palace Illuminate Your Event Success</h2>",
     ];
 
     let currentIndex = 0;
@@ -138,37 +130,14 @@
       title.innerHTML = titles[currentIndex];;
 
       currentIndex = (currentIndex + 1) % images.length;
-      setTimeout(changeBackground, 4000); // Change every 4 seconds
+      setTimeout(changeBackground, 4000); 
     }
-
-    // Start the initial change and timer
     changeBackground();
   </script>
+
   <!-- End Hero Section -->
 
   <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header pb-0">
-          <h2>About Us</h2>
-
-        </div>
-        <div class="content ">
-          <p>
-            Milano Palace has been a leading event management company in Dubai for many years and has organized
-            hundreds of successful events. Event achievements for our clients include expansion in brand awareness,
-            meaningful attendee engagement, and increased global and local reach. Whatever your goals are, Milano
-            Palace will assist you in meeting them through comprehensive event management services that will make
-            your
-            company shine.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
     <section class="feature-area pb-40">
       <div class="container">
         <div class="section-header mb-40">

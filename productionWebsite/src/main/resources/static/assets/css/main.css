@@ -609,6 +609,21 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+/* Import Montserrat font from Google Fonts (place this at the top of your CSS) */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+/* Apply Montserrat font to your header (h2) element */
+.heroTitle {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  line-height: 1.4 !important;
+  text-transform: uppercase !important;
+  font-size: 55px !important;
+
+}
+
+
 .hero {
   width: 100%;
   min-height: 100vh;
@@ -617,8 +632,8 @@ section {
   position: relative;
   padding: 120px 0;
   z-index: 3;
-  transition: background-image 1s ease-in-out;
-  animation: fadeIn 1s;
+  transition: background-image 2s ease-in-out;
+  animation: fadeIn 2s;
 }
 
 
@@ -631,17 +646,6 @@ section {
   }
 }
 
-/* 
-@media (min-width: 1034px) {
-  .hero:after {
-    position: absolute;
-    content: "";
-    width: 40%;
-    background: var(--color-secondary);
-    top: 0;
-    bottom: 0;
-  }
-} */
 
 .hero:before {
   position: absolute;
