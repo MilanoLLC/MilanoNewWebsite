@@ -9386,10 +9386,10 @@ blockquote cite::before {
   }
 }
 .tp-services-width {
-  max-width: 1630px;
+  /* max-width: 1630px; */
   margin: 0 auto;
 }
-@media only screen and (min-width: 1600px) and (max-width: 1700px) {
+/* @media only screen and (min-width: 1600px) and (max-width: 1700px) {
   .tp-services-width {
     max-width: 1590px;
   }
@@ -9403,7 +9403,7 @@ blockquote cite::before {
   .tp-services-width {
     max-width: 1190px;
   }
-}
+} */
 .tp-services-item {
   background-color: var(--tp-common-white);
   margin-left: 65px;
@@ -9442,11 +9442,11 @@ blockquote cite::before {
 .tp-services-item-thumb {
   display: inline-block;
   flex: 0 0 auto;
-  margin-right: 30px;
+  margin-right: 10px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tp-services-item-thumb {
-    margin-right: 10px;
+    margin-right: 5px;
   }
 }
 .tp-services-item-thumb img {
@@ -9457,13 +9457,18 @@ blockquote cite::before {
   border: 10px solid var(--tp-common-white);
 }
 .tp-services-item-title {
-  font-size: 26px;
+  font-size: 24px;
   margin-bottom: 18px;
+  font-weight: bold;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tp-services-item-title br {
     display: none;
   }
+}
+.services-area{
+  padding-inline: 10px;
+  padding-bottom: 10px;
 }
 .tp-services-item-content p {
   font-size: 14px;
@@ -9471,20 +9476,20 @@ blockquote cite::before {
 }
 .tp-services-item-head {
   position: absolute;
-  left: -78px;
-  top: 105px;
+  left: -50px; 
+  top: 10px;
   z-index: -1;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tp-services-item-head {
     left: -25px;
-    top: 70px;
+    top: 10px;
   }
 }
 @media (max-width: 767px) {
   .tp-services-item-head {
-    left: -25px;
-    top: 58px;
+    left: -20px;
+    top: 10px;
   }
 }
 .tp-services-item-head span {
@@ -11936,8 +11941,16 @@ blockquote cite::before {
   transition: 0.3s;
 }
 .tp-step-item-thumb img {
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   border: 20px solid var(--tp-common-white);
+  object-fit: cover;
+}
+.tp-step-item-content p{
+  font-size: 14px;
+  font-weight: normal;
+ 
 }
 .tp-step-item-thumb-icon {
   position: absolute;
