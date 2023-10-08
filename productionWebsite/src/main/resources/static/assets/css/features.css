@@ -7262,7 +7262,12 @@ body .ui-tooltip {
   text-transform: uppercase;
 }
 .tp-blog-item-title {
-  font-size: 26px;
+  color: #676767;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: 600 !important;
 }
 @media (max-width: 767px) {
   .tp-blog-item-title {
@@ -7276,6 +7281,10 @@ body .ui-tooltip {
 }
 .tp-blog-item-title a:hover {
   color: var(--tp-theme-primary);
+}
+.tp-blog-item-content p{
+  font-size: 17px;
+
 }
 .tp-blog-item-btn a {
   font-size: 16px;
@@ -10434,7 +10443,7 @@ blockquote cite::before {
 .tp-about-3-list ul li {
   list-style: none;
   color: var(--tp-theme-secondary);
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 18px;
   display: flex;
 }
@@ -10469,7 +10478,7 @@ blockquote cite::before {
 }
 .tp-about-3-shape-1 {
   position: absolute;
-  top: 25%;
+  top: 24.8%;
   left: 0;
 }
 .tp-about-3-project {
@@ -10524,6 +10533,8 @@ blockquote cite::before {
 }
 .tp-about-3-thumb-1 img {
   max-width: 100%;
+  margin-left: 15px;
+
 }
 .tp-about-3-thumb-2 img {
   max-width: 100%;
@@ -13321,6 +13332,22 @@ blockquote cite::before {
   bottom: 0;
   left: 0;
   animation: opacity-light 3s linear infinite;
+}
+
+.tp-why-item-icon {
+  flex: 0 0 auto;
+}
+.tp-why-item-icon span {
+  font-size: 32px;
+  color:white;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  background-color:  var(--tp-theme-primary);
+  text-align: center;
+  display: inline-block;
+  border-radius: 50px;
 }
 
 .tp-tech-item-icon {
