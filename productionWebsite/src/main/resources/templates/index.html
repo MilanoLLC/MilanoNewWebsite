@@ -119,14 +119,35 @@
       "<h2 class='heroTitle' data-aos='fade-up'>Let Milano Palace<br>Illuminate Your <br>Event Success</h2>",
     ];
 
+    const blobsMap = new Map();
     let currentIndex = 0;
-
     function changeBackground() {
-      hero.style.backgroundImage = `url(${images[currentIndex]})`;
-      title.innerHTML = titles[currentIndex];;
-
-      currentIndex = (currentIndex + 1) % images.length;
-      setTimeout(changeBackground, 4000);
+      if (blobsMap.get(images[currentIndex]) != null) {
+        hero.style.backgroundImage = `url(${blobsMap.get(images[currentIndex])})`;
+        title.innerHTML = titles[currentIndex];;
+        currentIndex = (currentIndex + 1) % images.length;
+        setTimeout(changeBackground, 4000);
+      } else {
+        fetch(images[currentIndex])
+          .then(response => {
+            if (response.ok) {
+              return response.blob();
+            } else {
+              throw new Error("Failed to fetch image");
+            }
+          })
+          .then(blob => {
+            const imageUrl = URL.createObjectURL(blob);
+            blobsMap.set(images[currentIndex], imageUrl);
+            hero.style.backgroundImage = `url(${imageUrl})`;
+            title.innerHTML = titles[currentIndex];;
+            currentIndex = (currentIndex + 1) % images.length;
+            setTimeout(changeBackground, 4000);
+          })
+          .catch(error => {
+            console.error(error);
+          });
+      }
     }
     changeBackground();
   </script>
@@ -455,7 +476,7 @@
 
 
 
-    
+
 
     <section id="services-list" class="services-list" style="background-color: #f7f9fc;">
       <div class="container wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
