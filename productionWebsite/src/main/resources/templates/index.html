@@ -101,8 +101,41 @@
     </div>
   </section>
 
-
   <script>
+    const hero = document.getElementById("hero");
+    const title = document.getElementById("headerTitle");
+    const video = document.createElement("video");
+    video.autoplay = true;
+    video.loop = true;
+    video.muted = true;
+    video.playsinline = true;
+    video.classList.add("fullscreen-video");
+    const videoSource = document.createElement("source");
+    videoSource.src = "assets/promo.mp4"; // Replace with the actual path or URL of your video
+    videoSource.type = "video/mp4";
+    video.appendChild(videoSource);
+    hero.appendChild(video);
+
+    const titles = [
+      "<h2 class='heroTitle' data-aos='fade-up'>Dubai's Premier<br>Event Management <br>Company</h2>",
+      "<h2 class='heroTitle' data-aos='fade-up'>Driving Success<br>Through Memorable <br>Events</h2>",
+      "<h2 class='heroTitle' data-aos='fade-up'>Elevating Brands<br>Engaging Audiences</h2>",
+      "<h2 class='heroTitle' data-aos='fade-up'>Let Milano Palace<br>Illuminate Your <br>Event Success</h2>",
+    ];
+
+    let currentIndex = 0;
+
+    function changeBackground() {
+      title.innerHTML = titles[currentIndex];
+      currentIndex = (currentIndex + 1) % titles.length;
+      setTimeout(changeBackground, 4000);
+    }
+
+    changeBackground();
+  </script>
+
+
+  <!-- <script>
     const hero = document.getElementById("hero");
     const title = document.getElementById("headerTitle");
     const images = [
@@ -150,7 +183,7 @@
       }
     }
     changeBackground();
-  </script>
+  </script> -->
 
   <!-- End Hero Section -->
 
