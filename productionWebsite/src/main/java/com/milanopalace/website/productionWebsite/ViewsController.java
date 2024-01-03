@@ -51,13 +51,18 @@ public class ViewsController {
 	@GetMapping("/itSolutions")    
 	public String itSolutions() {  
 		return "itSolutions";
-	}  
+	} 
+	
+	@GetMapping("/itSolution")    
+	public String itSolution() {  
+		return "itSol";
+	} 
 	  
 	@GetMapping("/marketingApps")
 	public String marketingApps() {
 		return "app development"; 
-	} 
-	
+	}   
+	 
 	@GetMapping("/about")
 	public String about() {
 		return "about";

@@ -13,10 +13,16 @@ public class ContactController {
 
 	@Autowired
 	private ContactService contactService ; 
-
+ 
 	
 	@PostMapping("/submitContactRequest")
 	public ContactForm submitContactForm(@RequestBody ContactForm form ) {
+		return contactService.submitForm(form);
+	}
+	
+	@PostMapping("/submitContactRequestSeprate")
+	public ContactForm submitContactRequestSeprate(@RequestBody ContactForm form ) {
+		form.setName(form.getName() + "_Sperate");
 		return contactService.submitForm(form);
 	}
 	
@@ -24,6 +30,6 @@ public class ContactController {
 	public List<ContactForm> getAll(){
 		return contactService.getAll();
 	}
-	
+	 
 	
 }
