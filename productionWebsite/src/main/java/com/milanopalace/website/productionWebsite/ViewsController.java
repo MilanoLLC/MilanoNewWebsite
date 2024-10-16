@@ -7,6 +7,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class ViewsController {
 	
 
+	
+	
+	
+	@GetMapping("/fitout")
+	public String portfoliodetails() {
+		return "fitoutProfile";
+	}
+	
+	
 	@GetMapping("/")
 	public String index() {
 		return "index";
