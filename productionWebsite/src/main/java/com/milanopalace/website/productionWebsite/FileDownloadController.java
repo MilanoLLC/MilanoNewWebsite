@@ -42,7 +42,8 @@ public class FileDownloadController {
                     .headers(headers)
                     .body(fileContent);
 
-        } catch (IOException e) {
+        } catch (Exception e) {
+        	e.printStackTrace();
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
         }
     }
