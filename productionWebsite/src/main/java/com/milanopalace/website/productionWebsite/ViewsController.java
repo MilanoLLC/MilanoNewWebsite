@@ -16,6 +16,12 @@ public class ViewsController {
 	}
 	
 	
+	
+	@GetMapping("/proposaldcaa")
+	public String proposaldcaa() {
+		return "proposaldcaa";
+	}
+	
 	@GetMapping("/")
 	public String index() {
 		return "index";
@@ -25,7 +31,7 @@ public class ViewsController {
 	public String indexpath() {
 		return "index";
 	}
-	
+	  
 	@GetMapping("/events")
 	public String events() {
 		return "corporate events";
