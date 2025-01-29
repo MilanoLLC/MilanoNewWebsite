@@ -111,6 +111,9 @@
     </script>
 
 
+   
+
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("downloadBtn").addEventListener("click", function () {
@@ -142,16 +145,18 @@
                         return response.blob(); // Convert response to blob (file format)
                     })
                     .then(blob => {
-                        // Open file in a new window/tab if the response is successful
+                        // Create a temporary link element to trigger the download
+                        const link = document.createElement('a');
                         const url = window.URL.createObjectURL(blob);
-                        const newTab = window.open(url, "_blank");
+                        link.href = url;
 
-                        // Check if the tab was successfully opened
-                        if (!newTab) {
-                            alert("Unable to open the file. Please check your browser's pop-up settings.");
-                        }
+                        // Set the file name (optional)
+                        link.download = "MilanoPalaceEventsProposal.pdf";
 
-                        // Revoke the object URL after some time
+                        // Programmatically click the link to start the download
+                        link.click();
+
+                        // Revoke the object URL after download
                         setTimeout(() => window.URL.revokeObjectURL(url), 1000);
                     })
                     .catch(error => {
