@@ -51,6 +51,64 @@
       transform: translateX(5px);
       color: rgb(49, 85, 163);
     }
+
+    .our-work {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .event-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      text-align: left;
+    }
+
+    .event-card iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 8px;
+    }
+
+    .event-card h3 {
+      margin: 15px 0 5px;
+      font-size: 1.25rem;
+    }
+
+    .event-card p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .youtube-btn {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .youtube-btn a {
+      display: inline-block;
+      background: #ff0000;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .youtube-btn a:hover {
+      background: #cc0000;
+    }
   </style>
 </head>
 
@@ -71,8 +129,8 @@
         <ul>
           <li><a id="home" href="/index" class="active">Home</a></li>
           <li><a id="events" href="/events">Corporate Events</a></li>
-          <li><a id="wedding" href="/wedding">Wedding Events</a></li>
-<li><a id="fitout" href="/fitout">Fitout</a></li>
+          <!--<li><a id="wedding" href="/wedding">Wedding Events</a></li>-->
+          <li><a id="fitout" href="/fitout">Fitout</a></li>
           <li class="dropdown"><a id="itSol" href="#"><span>IT Solutions</span> <i
                 class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
@@ -274,7 +332,46 @@
         style="background-image: url('assets/img/home/ourwork.avif');"></div>
     </section>
 
+    <section class="our-work">
+      <h2>Our Events</h2>
+      <p>Some of the amazing events we’ve brought to life.</p>
+      <div class="events-grid">
+        <div class="event-card">
+          <iframe src="https://www.youtube.com/embed/rBtoUps0kfY" frameborder="0" allowfullscreen></iframe>
+          <h3>First Gulf Youth Games</h3>
+          <p>Milano Palace Events proudly delivered the First Gulf Youth Games across multiple sports venues in Dubai —
+            a historic celebration of unity, talent, and youth excellence. From world-class organization to seamless
+            coordination, we turned every field into a stage for champions.</p>
+        </div>
+        <div class="event-card">
+          <iframe src="https://www.youtube.com/embed/eU1TjQ0GgcQ" frameborder=" 0" allowfullscreen></iframe>
+          <h3>Forum of strategic partners of the Ministry of Economy</h3>
+          <p>A landmark gathering that brought together key government officials, business leaders, and innovators to
+            strengthen collaboration, share insights, and shape future economic strategies.</p>
+        </div>
 
+
+
+        <div class="event-card">
+          <iframe src="https://www.youtube.com/embed/3Wciyz9uyNs" frameborder=" 0" allowfullscreen></iframe>
+          <h3>First Gulf Youth Games </h3>
+          <p>🏅✨ First Gulf Youth Games ✨🏅
+            Milano Palace Events proudly organized the First Gulf Youth Games at the Hayat Grand — a historic
+            celebration of sportsmanship, unity, and youth excellence across the region. </p>
+        </div>
+
+        <div class="event-card">
+          <iframe src="https://www.youtube.com/embed/YXS96BgD0ko" frameborder=" 0" allowfullscreen></iframe>
+          <h3>National Olympic Committee Elections Meeting</h3>
+          <p>An official gathering held to elect the new members of the National Olympic Committee, shaping the future
+            of sports leadership.</p>
+        </div>
+      </div>
+      <!-- YouTube Channel Button -->
+      <div class="youtube-btn">
+        <a href="https://www.youtube.com/@milanopalace5881" target="_blank">View More on YouTube</a>
+      </div>
+    </section>
 
 
 
@@ -325,10 +422,10 @@
                 </div>
                 <div class="tp-feature-4-item-content">
 
-                  <h4 class="tp-feature-4-item-title">Wedding Events</h4>
-                  <p>Turn your vision into a reality with our wedding event services.
-                    We will handle logistics, catering, production, and entertainment to guarantee you a
-                    luxurious, stress free, and show-stopping celebration. <br><br><br></p>
+                  <h4 class="tp-feature-4-item-title">Fitout Solutions</h4>
+                  <p>ransform your spaces with tailor-made fitouts that blend functionality and elegance. Whether it's a
+                    bedroom, dining room, staircase, or entrance, Milano Palace has the expertise to bring your vision
+                    to life. <br><br><br></p>
                   <br>
                   <div class="tp-about-section-btn ">
                     <a href="/wedding" class="btn btn-arrow wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">
